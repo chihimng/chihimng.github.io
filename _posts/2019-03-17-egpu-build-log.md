@@ -22,9 +22,10 @@ Aorus Gaming Box RTX2070
 
 
 # Installation Steps
-1. Install Windows and Bootcamp drivers.
 
-2. Use DDU to remove AMD driver.
+0. Install Windows and Bootcamp drivers.
+
+1. Use DDU to remove AMD driver.
 
 > Internal display could still work under Microsoft Basic Display Driver.
 
@@ -77,4 +78,3 @@ Using MSI Afterburner's OC Scanner feature, my card was able to achieve +255Mhz 
 # Comments
 - Some coil whine can be heard during high loads. Fans are quite noisy even when idle.
 - Either my keyboard's usb hub or Logitech mouse receiver did not play well with the box's usb ports. Plugging in my HHKB / G Pro Wireless receiver combo caused immediate system crash and infinite boot loop. External SSD works fine tho.
-
