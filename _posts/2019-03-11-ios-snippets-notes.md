@@ -92,3 +92,17 @@ private func scrollToBottom() {
     self.textView.scrollRangeToVisible(NSMakeRange(self.textView.text.count - 1, 0))
 }
 ```
+
+## Move UIPageControl of UIPageViewController to the front
+
+```swift
+override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    if let scrollView = self.view.subviews.first(where: { $0 is UIScrollView }) as? UIScrollView {
+        if let pageControl = self.view.subviews.first(where: { $0 is UIPageControl }) as? UIPageControl {
+            scrollView.frame = self.view.bounds
+            self.view.bringSubviewToFront(pageControl)
+        }
+    }
+}
+ ```
